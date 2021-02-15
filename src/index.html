@@ -4,11 +4,154 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.png" sizes="16x16 24x24 36x36 48x48">
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+
+
+    <header class="header">
+
+      <div class="header-texto">
+          <h1>MENSAJES GALACTICOS</h1>    
+      </div>
+
+
+    </header>
+
+    <div class="contenedor-modal">
+      <div id="miModal" class="modal">
+            <div class="modal-contenido">
+              
+              <button id="btnCerrarModal" class="btnCerrarModal">X</button>
+              <h2>Bienvenid@</h2>
+              <p>Hola! bienvenid@ a mensajes galacticos, la web que te ayudará a comunicarte de manera segura y personalizada. A continuación encontrarás las instrucciones para utilizarla.</p>
+              <p>Instrucciones: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            
+            </div>  
+       </div>
     </div>
+
+
+    
+    <section class="principal">
+
+     
+
+      <div class="principal-ventana" id="preguntas">
+
+        <div class="principal-ventana-div-tabla">
+
+
+          <table class="principal-form-table">
+            <tbody class="tbody">
+            <tr>
+              <td>
+                <label for="txtTexto">Ingresa tu texto</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <!-- <input type="text" class="inputTxt" name="txtTexto" id="txtTexto"> -->
+                <textarea name="txtTexto" class="inputTxt" id="txtTexto" cols="30" rows="5" required></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="txtTexto">Selecciona el canal de envío</label>
+              </td>
+            
+            </tr>
+
+            <tr>
+              <td>
+
+                <input type="number" class="controlNumero" required name="slcCanal" id="slcCanal"   min="1">
+             
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+               
+              <button class="btnPrincipal" id="btnCifrar">CIFRAR</button>
+
+              </td>
+
+              <td>
+                <button class="btnPrincipal" id="btnDecifrar">DECIFRAR</button>
+              </td>
+
+            </tr>
+
+            </tbody>
+          </table>
+
+     
+        </div>
+        
+      </div>
+
+
+      <div class="principal-ventana" id="respuestas">
+
+        <div class="principal-ventana-div-tabla">
+              
+          <table class="principal-form-table">
+            <tbody class="tbody">
+            <tr>
+              <td>
+                <label id="textoRespuesta"></label>
+              </td>
+            </tr>
+           
+            <tr>
+              <td>
+                <h1 class="cifrado" id="lblTextoCifrado"></h1>
+
+              </td>
+            
+            </tr>
+
+
+            <tr>
+              <td>
+               
+                    <button class="btnPrincipal" id="btnRegresar">REGRESAR</button>
+
+              </td>
+            </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- <section class="principal" id="seccionRespuesta">
+
+    
+
+
+    </section> -->
+
+
+    <footer class="footer">
+
+      <div class="footer-texto">
+      <!-- Copyright -->
+        <p class="texto"> ©2021 Copyright <a href="#">MajoLagos</a></p>
+       
+      
+      <!-- Copyright -->
+    </div>
+    </footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

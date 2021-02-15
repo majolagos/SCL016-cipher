@@ -1,0 +1,217 @@
+/* index */
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    background-image: url(img/fondo.jpg);
+    background-attachment: fixed; /*imagen fija*/
+    background-size:cover; /* ajustar imagen*/    
+    background-position: center;
+    justify-content:center;
+    flex-direction:column-reverse;
+
+}
+
+
+.header{
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.header-texto{
+
+    
+    position: absolute;
+    top: 5%;
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: #FFFFFF;
+
+}
+
+.principal {
+    /* position: relative; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal-ventana {
+    background-color: #00000080; /* le da transparencia y asi no tengo que utilizar el opacity */
+    width: 600px;
+    height: 400px;
+    /* opacity: 0.5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+label{
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+.principal-ventana-div-tabla{
+    width: 100%;
+    height: 80%;
+    /* background-color: deeppink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.principal-form-table{
+
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+
+
+
+.principal-form-table .inputTxt{
+
+    width: 100%;
+    border-radius: 4px;
+    text-transform: uppercase;
+    overflow:hidden;
+    resize: none;
+    width: 100%;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+}
+.principal-form-table .controlNumero{
+
+    border-radius: 4px;
+    border-style: none;
+    height: 30px;
+    width: 166%;
+
+    margin-bottom: 40px;
+
+
+}
+
+#respuestas{
+
+    display:none;
+ }
+
+
+.modal-contenido{
+  background: #6135C9;
+  background: -moz-linear-gradient(45deg, #6135C9 0%, #822BA4 50%, #C53D94 100%);
+  background: -webkit-linear-gradient(45deg, #6135C9 0%, #822BA4 50%, #C53D94 100%);
+  background: linear-gradient(45deg, #6135C9 0%, #822BA4 50%, #C53D94 100%);
+  color: white;
+  width:500px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+  border-radius: 3px;
+  font-size: 18px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btnCerrarModal{
+    border-color: transparent;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 95%;
+    background-color: #ffffff99;
+    color: midnightblue;
+    border-radius: 5px;
+}
+
+.btnCerrarModal:hover{
+
+    background-color: #40e0b3;
+    border-style: groove;
+    color: white
+
+
+}
+
+
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:-10;
+  right:0;
+  bottom:0;
+  left:0;  
+  display: inline;
+
+}
+
+.btnPrincipal{
+color: white;    
+width: 120px;
+height: 50px;
+background: linear-gradient(178.75deg, rgba(36, 158, 197, 0.930263) 32.15%, rgba(78, 0, 125, 0.71) 84.81%);
+border-radius: 5px;
+border-style: none;
+
+}
+
+
+.btnPrincipal:hover{
+    /* background: linear-gradient(178.75deg, rgba(61, 180, 218, 0.88) 32.15%, rgba(78, 0, 125, 0.71) 84.81%); */
+    background: linear-gradient(1deg, rgba(36, 158, 197, 0.930263) 32.15%, rgba(78, 0, 125, 0.71) 84.81%);
+    }
+
+    .btnPrincipal:active{
+               border-style: none;
+               background-color: tomato;
+        }
+    
+
+.footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:60px;
+    width:100%;
+    background:#000000;
+    text-align: center;
+    color:white;
+ }
+
+ .footer a{
+     color: turquoise;
+ }
+
+ .footer-texto{
+     position: flex;
+ }
+
+ .footer-texto .texto{
+     
+    align-items: center;
+ }
+
+
