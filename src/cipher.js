@@ -6,16 +6,21 @@ let textoCifradoFinal = "";
 const cipher = { //creo mi objeto cipher
 
 
+
   encode: (numero, texto)=> { 
 
-      
+    
+  try {
+    
+    if(texto != "" || texto != null){
+
+    
     for(let i=0; i<texto.length; i++){ //metodo encode
     
-      console.log(texto[i]);
-
+  
       let valorLetra = texto.charCodeAt(i);
-      console.log(valorLetra);
-
+  
+//agregar Ñ
       if(valorLetra >= 65 && valorLetra <=90){
       
         textoCifradoFinal = textoCifradoFinal + String.fromCharCode((valorLetra - 65 + parseInt(numero)) %26 + 65); 
@@ -30,28 +35,43 @@ const cipher = { //creo mi objeto cipher
       }
       
       }return textoCifradoFinal;
-  
+    }
 
-
+  } catch (e) {
+    console.log(e instanceof TypeError)  // true
+    console.log(e.message)               // "Hello"
+    console.log(e.name)                  // "TypeError"
+    console.log(e.fileName)              // "someFile.js"
+    console.log(e.lineNumber)            // 10
+    console.log(e.columnNumber)          // 0
+    console.log(e.stack)                 // "@Scratchpad/2:2:9\n"
+  }
 
   },
  
+
+ 
+
   decode: (numero, texto) => { 
+
+
+    try{
+
+    if(texto != "" || texto != null){
 
     for(let i=0; i<texto.length; i++){ //metodo decode
     
-      console.log(texto[i]);
+  
 
       let valorLetra = texto.charCodeAt(i);
-      console.log(valorLetra);
-
+     
       if(valorLetra >= 65 && valorLetra <=90){
       
-        textoCifradoFinal = textoCifradoFinal + String.fromCharCode((valorLetra - 65 - parseInt(numero)) %26 + 65); 
+        textoCifradoFinal = textoCifradoFinal + String.fromCharCode((valorLetra - 90 - parseInt(numero)) %26 + 90); 
 
       }else if(valorLetra >= 97 && valorLetra <= 122){
       
-        textoCifradoFinal = textoCifradoFinal + String.fromCharCode((valorLetra - 97 - parseInt(numero))%26+97);
+        textoCifradoFinal = textoCifradoFinal + String.fromCharCode((valorLetra - 122 - parseInt(numero)) %26 + 122);
       
       }else{
       
@@ -62,10 +82,22 @@ const cipher = { //creo mi objeto cipher
   
   
   }
+} catch (e) {
+  console.log(e instanceof TypeError)  // true
+  console.log(e.message)               // "Hello"
+  console.log(e.name)                  // "TypeError"
+  console.log(e.fileName)              // "someFile.js"
+  console.log(e.lineNumber)            // 10
+  console.log(e.columnNumber)          // 0
+  console.log(e.stack)                 // "@Scratchpad/2:2:9\n"
 }
 
 
+}
 
+
+  
+}
 
 export default cipher;
 

@@ -130,11 +130,18 @@ h1{
   color: white;
   width:500px;
   padding: 10px 20px;
-  margin: 20% auto;
+  margin: 14% auto;
   position: relative;
   border-radius: 3px;
   font-size: 18px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.modal-contenido p, h2{
+    text-align: justify;
+    box-sizing: content-box;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .btnCerrarModal{

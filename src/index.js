@@ -16,27 +16,28 @@ let btnRegresar = document.getElementById("btnRegresar");
 
     });
 
-
+//remove 
 
     btnCifrar.addEventListener("click", () =>{ //si hago clic en el boton btnCifrar ejecuto funcion para cifrar texto
         texto = document.getElementById("txtTexto").value;
         numero = document.getElementById("slcCanal").value;
 
-        if (texto == null || texto == "" || numero == null || numero == ""){
+        // if (texto == null || texto == "" || numero == null || numero == ""){
 
-            alert("Oye! te faltó ingresar datos :c");
-        }else{
+        //     alert("Oye! te faltó ingresar datos :c");
+        // }else{
 
 
             texto = texto.toUpperCase();        
     
             let cifrado =  cipher.encode(numero,texto);    
             
+            document.getElementById("lblTextoCifrado").innerHTML = ""; 
             document.getElementById("lblTextoCifrado").innerHTML = cifrado;
-        
+            document.getElementById("textoRespuesta").innerText = "Tu texto cifrado es: ";
             document.getElementById("preguntas").style.display = "none";
             document.getElementById("respuestas").style.display = "unset";
-        }
+        // }
     
     });
 
@@ -45,21 +46,21 @@ let btnRegresar = document.getElementById("btnRegresar");
         texto = document.getElementById("txtTexto").value;
         numero = document.getElementById("slcCanal").value;
 
-        if (texto == null || texto == "" || numero == null || numero == ""){
+        // if (texto == null || texto == "" || numero == null || numero == ""){
 
-            alert("Oye! te faltó ingresar datos :c");
-        }else{
-
+        //     alert("Oye! te faltó ingresar datos :c");
+        // }else{
 
             texto = texto.toUpperCase();        
     
             let decifrado =  cipher.decode(numero,texto);    
             
-            document.getElementById("textoRespuesta").innerText = "Tu texto decifrado es: ";
+            document.getElementById("textoRespuesta").innerHTML = "Tu texto decifrado es: ";
+            document.getElementById("lblTextoCifrado").innerHTML = "";   
             document.getElementById("lblTextoCifrado").innerHTML = decifrado;        
             document.getElementById("preguntas").style.display = "none";
             document.getElementById("respuestas").style.display = "block";
-        }
+        // }
     
     });
 
@@ -67,11 +68,18 @@ let btnRegresar = document.getElementById("btnRegresar");
 
         document.getElementById("preguntas").style.display = "block";
         document.getElementById("respuestas").style.display = "none";
-        // document.getElementById("lblTextoCifrado").innerHTML = "";
-        // document.getElementById("txtTexto").innerHTML = "";
-        // document.getElementById("slcCanal").innerText  ="";
-        // texto = "";
-        // numero = "";
+
+
+        // document.getElementById("lblTextoCifrado").value = "";
+        document.getElementById("txtTexto").value = "";
+        document.getElementById("slcCanal").value = "";
+        document.getElementById("textoRespuesta").value = "";
+        
+        texto = "";
+        numero = "";
+       
+
+        
 
     })
 
