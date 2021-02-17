@@ -10,42 +10,41 @@ const cipher = { //creo mi objeto cipher
   encode: (numero, texto)=> { 
 
     
-  try {
+  // try {
     
-    if(texto != "" || texto != null){
+    // if(texto != "" || texto != null){
 
     
     for(let i=0; i<texto.length; i++){ //metodo encode
     
   
       let valorLetra = texto.charCodeAt(i);
-  
-//agregar Ñ
-      if(valorLetra >= 65 && valorLetra <=90){
+
+      if(valorLetra >= 65 && valorLetra <=90){ //mayúsculas
       
         textoCifradoFinal = textoCifradoFinal + String.fromCharCode((valorLetra - 65 + parseInt(numero)) %26 + 65); 
 
-      }else if(valorLetra >= 97 && valorLetra <= 122){
+      }else if(valorLetra >= 97 && valorLetra <= 122){//minúsculas
       
         textoCifradoFinal = textoCifradoFinal + String.fromCharCode((valorLetra - 97 + parseInt(numero))%26+97);
       
-      }else{
+      }else{ //otros
       
         textoCifradoFinal = textoCifradoFinal + texto[i];
       }
       
       }return textoCifradoFinal;
-    }
+    // }
 
-  } catch (e) {
-    console.log(e instanceof TypeError)  // true
-    console.log(e.message)               // "Hello"
-    console.log(e.name)                  // "TypeError"
-    console.log(e.fileName)              // "someFile.js"
-    console.log(e.lineNumber)            // 10
-    console.log(e.columnNumber)          // 0
-    console.log(e.stack)                 // "@Scratchpad/2:2:9\n"
-  }
+  // } catch (e) {
+  //   console.log(e instanceof TypeError)  // true
+  //   console.log(e.message)               // "Hello"
+  //   console.log(e.name)                  // "TypeError"
+  //   console.log(e.fileName)              // "someFile.js"
+  //   console.log(e.lineNumber)            // 10
+  //   console.log(e.columnNumber)          // 0
+  //   console.log(e.stack)                 // "@Scratchpad/2:2:9\n"
+  // }
 
   },
  
@@ -55,9 +54,9 @@ const cipher = { //creo mi objeto cipher
   decode: (numero, texto) => { 
 
 
-    try{
+    // try{
 
-    if(texto != "" || texto != null){
+    // if(texto != "" || texto != null){
 
     for(let i=0; i<texto.length; i++){ //metodo decode
     
@@ -81,16 +80,16 @@ const cipher = { //creo mi objeto cipher
       }return textoCifradoFinal;
   
   
-  }
-} catch (e) {
-  console.log(e instanceof TypeError)  // true
-  console.log(e.message)               // "Hello"
-  console.log(e.name)                  // "TypeError"
-  console.log(e.fileName)              // "someFile.js"
-  console.log(e.lineNumber)            // 10
-  console.log(e.columnNumber)          // 0
-  console.log(e.stack)                 // "@Scratchpad/2:2:9\n"
-}
+  // }
+// } catch (e) {
+//   console.log(e instanceof TypeError)  // true
+//   console.log(e.message)               // "Hello"
+//   console.log(e.name)                  // "TypeError"
+//   console.log(e.fileName)              // "someFile.js"
+//   console.log(e.lineNumber)            // 10
+//   console.log(e.columnNumber)          // 0
+//   console.log(e.stack)                 // "@Scratchpad/2:2:9\n"
+// }
 
 
 }
