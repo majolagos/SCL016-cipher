@@ -1,20 +1,11 @@
 
-let textoCifradoFinal = "";
-
-
-
 const cipher = { //creo mi objeto cipher
-
 
 
   encode: (numero, texto)=> { 
 
-    
-  // try {
-    
-    // if(texto != "" || texto != null){
+    let textoCifradoFinal = "";
 
-    
     for(let i=0; i<texto.length; i++){ //metodo encode
     
   
@@ -33,30 +24,14 @@ const cipher = { //creo mi objeto cipher
         textoCifradoFinal = textoCifradoFinal + texto[i];
       }
       
-      }return textoCifradoFinal;
-    // }
-
-  // } catch (e) {
-  //   console.log(e instanceof TypeError)  // true
-  //   console.log(e.message)               // "Hello"
-  //   console.log(e.name)                  // "TypeError"
-  //   console.log(e.fileName)              // "someFile.js"
-  //   console.log(e.lineNumber)            // 10
-  //   console.log(e.columnNumber)          // 0
-  //   console.log(e.stack)                 // "@Scratchpad/2:2:9\n"
-  // }
+    }return textoCifradoFinal;
 
   },
  
 
- 
-
   decode: (numero, texto) => { 
 
-
-    // try{
-
-    // if(texto != "" || texto != null){
+    let textoDecifradoFinal = "";
 
     for(let i=0; i<texto.length; i++){ //metodo decode
     
@@ -66,32 +41,19 @@ const cipher = { //creo mi objeto cipher
      
       if(valorLetra >= 65 && valorLetra <=90){
       
-        textoCifradoFinal = textoCifradoFinal + String.fromCharCode((valorLetra - 90 - parseInt(numero)) %26 + 90); 
+        textoDecifradoFinal = textoDecifradoFinal + String.fromCharCode((valorLetra - 90 - parseInt(numero)) %26 + 90); 
 
       }else if(valorLetra >= 97 && valorLetra <= 122){
       
-        textoCifradoFinal = textoCifradoFinal + String.fromCharCode((valorLetra - 122 - parseInt(numero)) %26 + 122);
+        textoDecifradoFinal = textoDecifradoFinal + String.fromCharCode((valorLetra - 122 - parseInt(numero)) %26 + 122);
       
       }else{
       
-        textoCifradoFinal = textoCifradoFinal + texto[i];
+        textoDecifradoFinal = textoDecifradoFinal + texto[i];
       }
       
-      }return textoCifradoFinal;
+      }return textoDecifradoFinal;
   
-  
-  // }
-// } catch (e) {
-//   console.log(e instanceof TypeError)  // true
-//   console.log(e.message)               // "Hello"
-//   console.log(e.name)                  // "TypeError"
-//   console.log(e.fileName)              // "someFile.js"
-//   console.log(e.lineNumber)            // 10
-//   console.log(e.columnNumber)          // 0
-//   console.log(e.stack)                 // "@Scratchpad/2:2:9\n"
-// }
-
-
 }
 
 
