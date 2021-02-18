@@ -20,7 +20,7 @@ let btnRegresar = document.getElementById("btnRegresar");
      
       texto = document.getElementById("txtTexto").value;
       numero = document.getElementById("slcCanal").value;
-        // document.getElementById("H1TextoCifrado").textContent  = "";
+  
        
         if (texto == null || texto == "" || numero == null || numero == ""){
 

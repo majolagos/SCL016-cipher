@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.png" sizes="16x16 24x24 36x36 48x48">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.png" sizes="16x16 24x24 36x36 48x48">
+</head>
+
+<body>
 
 
-    <header class="header">
+  <header class="header">
 
-      <div class="header-texto">
-          <h1>MENSAJES GALACTICOS</h1>    
-      </div>
-
-
-    </header>
-
-    <div class="contenedor-modal">
-      <div id="miModal" class="modal">
-            <div class="modal-contenido">
-              
-              <button id="btnCerrarModal" class="btnCerrarModal">X</button>
-              <h2>Bienvenid@</h2>
-              <p>Hola! bienvenid@ a mensajes galacticos, la web que te ayudará a comunicarte de manera segura y personalizada. A continuación encontrarás las instrucciones para utilizarla.</p>
-              <p>Instrucciones:</p>
-              <p>Cifrado: Ingresa el texto que quieres cifrar, luego selecciona el canal de envío (este es importante para poder decifrar luego tu mensaje) y presiona el botón cifrar.</p>
-              <p>Decifrado: Ingresa el texto que quieres decifrar, luego selecciona el cananl de envío que te proporcionaron y presiona el botón decifrar</p> 
-            </div>  
-       </div>
+    <div class="header-texto">
+      <h1>MENSAJES GALACTICOS</h1>
     </div>
 
 
-    
-    <section class="principal">
+  </header>
 
-     
+  <div class="contenedor-modal">
+    <div id="miModal" class="modal">
+      <div class="modal-contenido">
 
-      <div class="principal-ventana" id="preguntas">
+        <button id="btnCerrarModal" class="btnCerrarModal">X</button>
+        <h2>Bienvenid@</h2>
+        <p>Hola! bienvenid@ a mensajes galacticos, la web que te ayudará a comunicarte de manera segura y personalizada.
+          A continuación encontrarás las instrucciones para utilizarla.</p>
+        <p>Instrucciones:</p>
+        <p>Cifrado: Ingresa el texto que quieres cifrar, luego selecciona el canal de envío (este es importante para
+          poder decifrar luego tu mensaje) y presiona el botón cifrar.</p>
+        <p>Decifrado: Ingresa el texto que quieres decifrar, luego selecciona el cananl de envío que te proporcionaron y
+          presiona el botón decifrar</p>
+      </div>
+    </div>
+  </div>
 
-        <div class="principal-ventana-div-tabla">
 
 
-          <table class="principal-form-table">
-            <tbody class="tbody">
+  <section class="principal">
+
+
+
+    <div class="principal-ventana" id="preguntas">
+
+      <div class="principal-ventana-div-tabla">
+
+
+        <table class="principal-form-table">
+          <tbody class="tbody">
             <tr>
               <td>
                 <label for="txtTexto">Ingresa tu texto</label>
@@ -63,21 +68,21 @@
               <td>
                 <label for="txtTexto">Selecciona el canal de envío</label>
               </td>
-            
+
             </tr>
 
             <tr>
               <td>
 
-                <input type="number" class="controlNumero" required name="slcCanal" id="slcCanal"   min="1">
-             
+                <input type="number" class="controlNumero" required name="slcCanal" id="slcCanal" min="1">
+
               </td>
             </tr>
 
             <tr>
               <td>
-               
-              <button class="btnPrincipal" id="btnCifrar">CIFRAR</button>
+
+                <button class="btnPrincipal" id="btnCifrar">CIFRAR</button>
 
               </td>
 
@@ -87,65 +92,66 @@
 
             </tr>
 
-            </tbody>
-          </table>
+          </tbody>
+        </table>
 
-     
-        </div>
-        
+
       </div>
 
+    </div>
 
-      <div class="principal-ventana" id="respuestas">
 
-        <div class="principal-ventana-div-tabla">
-              
-          <table class="principal-form-table">
-            <tbody class="tbody">
+    <div class="principal-ventana" id="respuestas">
+
+      <div class="principal-ventana-div-tabla">
+
+        <table class="principal-form-table">
+          <tbody class="tbody">
             <tr>
               <td>
                 <label id="textoRespuesta"></label>
               </td>
             </tr>
-           
+
             <tr>
               <td>
                 <h1 class="cifrado" id="H1TextoCifrado"></h1>
 
               </td>
-            
+
             </tr>
 
 
             <tr>
               <td>
-               
-                    <button class="btnPrincipal" id="btnRegresar">REGRESAR</button>
+
+                <button class="btnPrincipal" id="btnRegresar">REGRESAR</button>
 
               </td>
             </tr>
 
-            </tbody>
-          </table>
-
-        </div>
+          </tbody>
+        </table>
 
       </div>
 
-    </section>
+    </div>
+
+  </section>
 
 
-    <footer class="footer">
+  <footer class="footer">
 
-      <div class="footer-texto">
+    <div class="footer-texto">
       <!-- Copyright -->
-        <p class="texto"> ©2021 Copyright <a href="#">MajoLagos</a></p>
-       
-      
+      <p class="texto"> ©2021 Copyright <a href="#">MajoLagos</a></p>
+
+
       <!-- Copyright -->
     </div>
-    </footer>
+  </footer>
 
-    <script src="index.js" type="module"></script>
-  </body>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
