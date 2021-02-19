@@ -17,7 +17,7 @@
 
 <label>Prototipado en Figma:</label>
 
-https://www.figma.com/file/6QQCa0WG1XZGhwakuuTml4/CIPHER?node-id=0%3A1
+https://www.figma.com/proto/6QQCa0WG1XZGhwakuuTml4/CIPHER?node-id=13%3A18&scaling=min-zoom
 
 <h2>Ubicación del proyecto:</h2>
 https://majolagos.github.io/SCL016-cipher/
