@@ -2,18 +2,18 @@
 const cipher = { //creo mi objeto cipher
 
 
-  encode: (numero, texto)=> { 
+  encode: (numero, texto)=> {  //metodo encode
 
     let textoCifradoFinal = "";
 
-    for(let i=0; i<texto.length; i++){ //metodo encode
+    for(let i=0; i<texto.length; i++){
     
   
-      let valorLetra = texto.charCodeAt(i);
+      let valorLetra = texto.charCodeAt(i); //obtengo valor ascii
 
       if(valorLetra >= 65 && valorLetra <=90){ //mayúsculas
       
-        textoCifradoFinal = textoCifradoFinal + String.fromCharCode((valorLetra - 65 + parseInt(numero)) %26 + 65); 
+        textoCifradoFinal = textoCifradoFinal + String.fromCharCode((valorLetra - 65 + parseInt(numero)) %26 + 65); //obtengo letra cifrada
 
       }else if(valorLetra >= 97 && valorLetra <= 122){//minúsculas
       
@@ -29,11 +29,11 @@ const cipher = { //creo mi objeto cipher
   },
  
 
-  decode: (numero, texto) => { 
+  decode: (numero, texto) => { //metodo decode
 
-    let textoDecifradoFinal = "";
+    let textoDescifradoFinal = "";
 
-    for(let i=0; i<texto.length; i++){ //metodo decode
+    for(let i=0; i<texto.length; i++){ 
     
   
 
@@ -41,18 +41,18 @@ const cipher = { //creo mi objeto cipher
      
       if(valorLetra >= 65 && valorLetra <=90){
       
-        textoDecifradoFinal = textoDecifradoFinal + String.fromCharCode((valorLetra - 90 - parseInt(numero)) %26 + 90); 
+        textoDescifradoFinal = textoDescifradoFinal + String.fromCharCode((valorLetra - 90 - parseInt(numero)) %26 + 90); 
 
       }else if(valorLetra >= 97 && valorLetra <= 122){
       
-        textoDecifradoFinal = textoDecifradoFinal + String.fromCharCode((valorLetra - 122 - parseInt(numero)) %26 + 122);
+        textoDescifradoFinal = textoDescifradoFinal + String.fromCharCode((valorLetra - 122 - parseInt(numero)) %26 + 122);
       
       }else{
       
-        textoDecifradoFinal = textoDecifradoFinal + texto[i];
+        textoDescifradoFinal = textoDescifradoFinal + texto[i];
       }
       
-      }return textoDecifradoFinal;
+      }return textoDescifradoFinal;
   
 }
 
