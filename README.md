@@ -13,5 +13,10 @@
 <h3>Construido con:</h3>
 <p>Este proyecto está desarrollado con HTML, CSS y Vanilla Javascript.</p>
 
+<H2> Prototipo </h2>
+
+Prototipado en Figma:
+https://www.figma.com/proto/6QQCa0WG1XZGhwakuuTml4/Untitled?node-id=0%3A1
+
 <h2>Ubicación del proyecto:</h2>
 https://majolagos.github.io/SCL016-cipher/
