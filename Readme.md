@@ -7,8 +7,8 @@
 <p>Este proyecto está orientado hacia las personas que deseen resguardar su información o quieran comunicarse de una forma más segura. </p>
 
 <h2>Instrucciones de uso:</h2>
-<h3>Cifrado:</h3><p>Ingresa el texto que quieres cifrar, luego selecciona el canal de envío (este es importante para poder descifrar luego tu mensaje) y presiona el botón cifrar.
-Descifrado: Ingresa el texto que quieres descifrar, luego selecciona el canal de envío que te proporcionaron y presiona el botón descifrar.</p>
+<h3>Cifrado:</h3><p>Ingresa el texto que quieres cifrar, luego selecciona el canal de envío (este es importante para poder descifrar luego tu mensaje) y presiona el botón cifrar.</p>
+<h3>Descifrado:</h3> <p>Ingresa el texto que quieres descifrar, luego selecciona el canal de envío que te proporcionaron y presiona el botón descifrar.</p>
 
 <h3>Construido con:</h3>
 <p>Este proyecto está desarrollado con HTML, CSS y Vanilla Javascript.</p>
